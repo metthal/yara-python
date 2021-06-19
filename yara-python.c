@@ -433,7 +433,7 @@ static PyStructSequence_Desc RuleString_Desc = {
   "RuleString",
   "Named tuple tying together rule identifier and string identifier",
   RuleString_Fields,
-  sizeof(RuleString_Fields) / sizeof(RuleString_Fields[0])
+  (sizeof(RuleString_Fields) - 1) / sizeof(RuleString_Fields[0])
 };
 
 static PyTypeObject RuleString_Type = {0};
